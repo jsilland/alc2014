@@ -1,32 +1,40 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: rgb(17, 129, 191);
-  color: #f78a17;
-  font-family: 'Carrois Gothic', sans-serif;
+  background-color: #FFCC66;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
   font-weight: 100;
   font-size: 5em;
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
 }
 
 h2 {
-  font-family: 'Georgia', serif;
-  color: #f78a17;
+  color: #FF6600;
   font-size: 7em;
   text-align: center;
 }
 
 article {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
   margin: 1em 0 1em 1em;
+}
+
+article h3 {
+  padding: 1em;
 }
 
 ul {
   margin: 0;
-  padding: 3em 0 0 3em;
+  padding: 1em 0 0 3em;
   list-style-type: none;
 }
 
@@ -61,7 +69,7 @@ p {
   text-align: center;
   margin-left: 5em;
   margin-right: 5em;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .no-close .ui-dialog-titlebar-close {
@@ -72,49 +80,56 @@ p {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A3%7Cenc%3AwmceFvaejV%7DM%60Ck%5EjvAkZnq%40fk%40vkAoLrmBwIlZ%5Dft%40tqAY%7CRp%7D%40%60c%40aCxf%40u_%40jq%40dFn%5BcInZwOpm%40sy%40~t%40_%60%40bb%40xBft%40%7Bn%40%60p%40_dAnxDwhDja%40%7Bf%40BoGxo%40kn%40rMi%5BnUmQi%40eNlYiUbFpIxi%40e%60%40nz%40aiA%7Cu%40ub%40fSy_%40lKdNxw%40qf%40tc%40iH~%40u%5BhGgOoX_s%40vN%5Blb%40wt%40~%5BwH%60m%40em%40xJuUbZjf%40nNkDlE%7CF_Vpp%40_YxVR%7CNlW%60VxFtZbh%40sD%60%40jQnLNpKrUoBhWxHhOvv%40hBUfIcThI%7DVb%5CnDll%40nc%40%60gAn%60%40vh%40%60RbbApq%40ds%40xKfi%40G~UrWfIta%40wDz_Ao%60%40t%7BC_P~_Ckh%40vX_MtfAwhAhlA_Jfp%40bEtv%40oo%40dh%40%7CHrm%40mW%60YRju%40kUdIjEhBd%5Cl%60%40dW%5BjFlAsEde%40tMbqBbHrXnItk%40uInf%40%7CSleAtIxfCxn%40pd%40%60Cxx%40eVr%7C%40_p%40tv%40iA%7CcAa%5Efg%40cEfjAyz%40bNlTaNoUtEms%40bq%40kbBnLqMrtAii%40nw%40ap%40~_AcmD%60fAo%60A%60uAys%40fTeb%40zlBqdC~a%40iN%60y%40kx%40vkBijAvhCesC%60b%40yQrh%40g_AzqAswAtg%40anApw%40k~%40nd%40o%60AteAyeDh_Ac_BfEci%40bi%40_bB%7CJau%40%7BCa%60CxImoCgLef%40%7DKoJzD%7DKqJsHmXln%40%7Bd%40o%5C%7BFeq%40kGeGeNhGgQwC_%40bV&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A3%7Cenc%3AwmceFvaejV%7DM%60Ck%5EjvAkZnq%40fk%40vkAoLrmBwIlZ%5Dft%40tqAY%7CRp%7D%40%60c%40aCxf%40u_%40jq%40dFn%5BcInZwOpm%40sy%40~t%40_%60%40bb%40xBft%40%7Bn%40%60p%40_dAnxDwhDja%40%7Bf%40BoGxo%40kn%40rMi%5BnUmQi%40eNlYiUbFpIxi%40e%60%40nz%40aiA%7Cu%40ub%40fSy_%40lKdNxw%40qf%40tc%40iH~%40u%5BhGgOoX_s%40vN%5Blb%40wt%40~%5BwH%60m%40em%40xJuUbZjf%40nNkDlE%7CF_Vpp%40_YxVR%7CNlW%60VxFtZbh%40sD%60%40jQnLNpKrUoBhWxHhOvv%40hBUfIcThI%7DVb%5CnDll%40nc%40%60gAn%60%40vh%40%60RbbApq%40ds%40xKfi%40G~UrWfIta%40wDz_Ao%60%40t%7BC_P~_Ckh%40vX_MtfAwhAhlA_Jfp%40bEtv%40oo%40dh%40%7CHrm%40mW%60YRju%40kUdIjEhBd%5Cl%60%40dW%5BjFlAsEde%40tMbqBbHrXnItk%40uInf%40%7CSleAtIxfCxn%40pd%40%60Cxx%40eVr%7C%40_p%40tv%40iA%7CcAa%5Efg%40cEfjAyz%40bNlTaNoUtEms%40bq%40kbBnLqMrtAii%40nw%40ap%40~_AcmD%60fAo%60A%60uAys%40fTeb%40zlBqdC~a%40iN%60y%40kx%40vkBijAvhCesC%60b%40yQrh%40g_AzqAswAtg%40anApw%40k~%40nd%40o%60AteAyeDh_Ac_BfEci%40bi%40_bB%7CJau%40%7BCa%60CxImoCgLef%40%7DKoJzD%7DKqJsHmXln%40%7Bd%40o%5C%7BFeq%40kGeGeNhGgQwC_%40bV&scale=1&sensor=false&size=640x320');
 }
 
 #sckc {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Acnv%60FjezgVP%7BEkPcC~Bad%40fqA%7D%5CoCiMfElF%7CVuEpAin%40nMmKmIym%40p%40_g%40lZdBxG_OuN%7DOjKms%40uFgl%40TeoAit%40cdAiDwScPgBsOaz%40w_%40%7BWfHsdBhUyp%40~Xi%40gCwv%40rc%40lLhDo%5CwPiZzvBmuB%7DBsU%7CKoi%40qAkPf%7B%40iWlIaNxi%40bNHtF~FuFf%7C%40ulC%7C%60%40mc%40v%60A_%5Cbl%40eg%40zU%7Bj%40rf%40ih%40hGq%5BzV%7BWuEsQdk%40mWdd%40sd%40%7CP%7CTfHvf%40vRbQdFbBhMuXhXbInY%7DlAiIaW%40iv%40rqCTta%40jd%40tS%7Ck%40lMrHnzBgPns%40~AbaA_c%40hg%40vy%40nbApD%60X%7BMxoBezBvm%40~vAln%40vp%40~fCtBbaAdt%40bIaOtG%7Df%40~d%40j%5EjmBkdF%7Bu%40ej%40_Qmp%40To%7DEzgA%7DbCsz%40%7Dr%40%60J%7DZkCg%5EaJTu%40aKf%5DeG%7BLeiBhOuhDsFyoBlnDo%7DC~%5Bih%40pwAmwF%7C~EkkDj~%40g%60%40xqC_vBiEo_Ex%7D%40o%7B%40u%40qRds%40%7Bq%40%7CPhCb~%40u%7B%40dxBvnDnTkVpKvMflAntBxB%7C%5Djc%40xSbNzRpr%40cYvW_%7C%40j_%40i%5BfzAsbCtYyUze%40_BvdAcnDd_Aw%5Ct%5Bcg%40%60OccA_BmMlg%40gjBaV%7DVdEiNnEzD%7BDcFpOay%40ns%40ojAxJhBboEgsAfhAExqEay%40bhBxJrmBry%40pE%7D~%40mIg%7D%40g%5EcRugBkbEzaB__CbKkbAb%7DHisJL%7BNd%5CuD%7CfAwg%40j%60B_eAdXcVrJq%60%40mKzGeb%40wc%40mE%60S&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Acnv%60FjezgVP%7BEkPcC~Bad%40fqA%7D%5CoCiMfElF%7CVuEpAin%40nMmKmIym%40p%40_g%40lZdBxG_OuN%7DOjKms%40uFgl%40TeoAit%40cdAiDwScPgBsOaz%40w_%40%7BWfHsdBhUyp%40~Xi%40gCwv%40rc%40lLhDo%5CwPiZzvBmuB%7DBsU%7CKoi%40qAkPf%7B%40iWlIaNxi%40bNHtF~FuFf%7C%40ulC%7C%60%40mc%40v%60A_%5Cbl%40eg%40zU%7Bj%40rf%40ih%40hGq%5BzV%7BWuEsQdk%40mWdd%40sd%40%7CP%7CTfHvf%40vRbQdFbBhMuXhXbInY%7DlAiIaW%40iv%40rqCTta%40jd%40tS%7Ck%40lMrHnzBgPns%40~AbaA_c%40hg%40vy%40nbApD%60X%7BMxoBezBvm%40~vAln%40vp%40~fCtBbaAdt%40bIaOtG%7Df%40~d%40j%5EjmBkdF%7Bu%40ej%40_Qmp%40To%7DEzgA%7DbCsz%40%7Dr%40%60J%7DZkCg%5EaJTu%40aKf%5DeG%7BLeiBhOuhDsFyoBlnDo%7DC~%5Bih%40pwAmwF%7C~EkkDj~%40g%60%40xqC_vBiEo_Ex%7D%40o%7B%40u%40qRds%40%7Bq%40%7CPhCb~%40u%7B%40dxBvnDnTkVpKvMflAntBxB%7C%5Djc%40xSbNzRpr%40cYvW_%7C%40j_%40i%5BfzAsbCtYyUze%40_BvdAcnDd_Aw%5Ct%5Bcg%40%60OccA_BmMlg%40gjBaV%7DVdEiNnEzD%7BDcFpOay%40ns%40ojAxJhBboEgsAfhAExqEay%40bhBxJrmBry%40pE%7D~%40mIg%7D%40g%5EcRugBkbEzaB__CbKkbAb%7DHisJL%7BNd%5CuD%7CfAwg%40j%60B_eAdXcVrJq%60%40mKzGeb%40wc%40mE%60S&scale=1&sensor=false&size=640x320');
 }
 
 #kcpr {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Aod~%7BEjelbVbCwPnGzAzIdQzO~M~U_Tna%40mOhh%40mi%40jgAg%5EpPAjXtGtL%5Edb%40wGtr%40aQpYsBr_ApK%60iAoEjh%40nCpKbCbHfGjv%40pqAdNdb%40zPbdAxe%40jy%40b%5EvVv%5C%7C%5DvJpCh%60%40XrXtWfGnC~k%40%7CAxZ%7BLrW%7DDxa%40vFlPGlb%40iJtZiOrNcDrx%40f%40j%60BjNrj%40oG%7Co%40xCl%60AqKjm%40mM%7CKl%40hDlClMApEqBpD_Fhs%40ibBzcBgcDbDsQh%5CibDnAucFhAePnrA%7B~CfiA%7DsBdOie%40xBe%7D%40hIop%40a%40%7BY%60KicAlIwe%40gFqr%40xYit%40vDc%5EfBy%60%40cD%7DUVsLfOg_%40h%5Bm%5EjQgc%40zhA%7DlEnv%40ckFh%40%7DOcE%7Db%40eYkr%40u%40gKrv%40ilBeBaFfIwRkEmj%40jLax%40%60%40u_DxCqStI%7DQll%40cs%40tb%40yXllBwTjIxAde%40bS%7C%5Bv%40rNzFfKcMveA_n%40hKkMhf%40%7B%7D%40~bAav%40dXio%40dOiShOu%5CfJ_InAcOld%40wo%40vHcEzP%7BAzlAvJ%60OGtFlBCmAqEm%40%7D%60%40iAd%40t%40ePmD%60%40q%60%40eF_%60%40jBwGpFcD%60Ng%40jXbM%7CvB%60Avr%40eJ~YcRng%40R%7CStDjTmCpZ%3FhAdKjhApGdYtLzVg%40%7Cl%40fVlKZtP~KnRnAjV_Gza%40wd%40rj%40aQ%7C%5CqFlo%40tHfGo%40fHfGfDvIVzFar%40bDc%40qNoH_BnAr%40&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Aod~%7BEjelbVbCwPnGzAzIdQzO~M~U_Tna%40mOhh%40mi%40jgAg%5EpPAjXtGtL%5Edb%40wGtr%40aQpYsBr_ApK%60iAoEjh%40nCpKbCbHfGjv%40pqAdNdb%40zPbdAxe%40jy%40b%5EvVv%5C%7C%5DvJpCh%60%40XrXtWfGnC~k%40%7CAxZ%7BLrW%7DDxa%40vFlPGlb%40iJtZiOrNcDrx%40f%40j%60BjNrj%40oG%7Co%40xCl%60AqKjm%40mM%7CKl%40hDlClMApEqBpD_Fhs%40ibBzcBgcDbDsQh%5CibDnAucFhAePnrA%7B~CfiA%7DsBdOie%40xBe%7D%40hIop%40a%40%7BY%60KicAlIwe%40gFqr%40xYit%40vDc%5EfBy%60%40cD%7DUVsLfOg_%40h%5Bm%5EjQgc%40zhA%7DlEnv%40ckFh%40%7DOcE%7Db%40eYkr%40u%40gKrv%40ilBeBaFfIwRkEmj%40jLax%40%60%40u_DxCqStI%7DQll%40cs%40tb%40yXllBwTjIxAde%40bS%7C%5Bv%40rNzFfKcMveA_n%40hKkMhf%40%7B%7D%40~bAav%40dXio%40dOiShOu%5CfJ_InAcOld%40wo%40vHcEzP%7BAzlAvJ%60OGtFlBCmAqEm%40%7D%60%40iAd%40t%40ePmD%60%40q%60%40eF_%60%40jBwGpFcD%60Ng%40jXbM%7CvB%60Avr%40eJ~YcRng%40R%7CStDjTmCpZ%3FhAdKjhApGdYtLzVg%40%7Cl%40fVlKZtP~KnRnAjV_Gza%40wd%40rj%40aQ%7C%5CqFlo%40tHfGo%40fHfGfDvIVzFar%40bDc%40qNoH_BnAr%40&scale=1&sensor=false&size=640x320');
 }
 
 #prsm {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3AeooxEper_VdG%60CbAvNhx%40sCvA%7Cj%40bmBcJzwBtYle%40duBzWtb%40vs%40jhB%60u%40rrAta%40b%5Cjb%40x%7C%40s%40bhAnWtbBdw%40jpAgAli%40nI%7Cu%40kEjqApQx_AoAl%7C%40tPfs%40%7DEja%40bApo%40wUfeA%7DZ~o%40iGfd%40%60Cr%40cWz%7C%40vD%7CaAkPjg%40%7DOzaBzHbw%40j%60%40%60k%40rHzjArPfh%40wGrnDpOnu%40Ur%60ArdAhkBrU%7DKp%5Dqk%40~n%40mm%40xq%40woAps%40e_AzoAex%40ti%40gi%40bNuh%40beBeaDt%5E%7BvAtHuhBcCerBvq%40idBn%7BA%7D%7D%40jrBiw%40v%7D%40cx%40%7CgCeo%40j_%40%7DZhIu_%40rTsXrJiqAvMsVwD_b%40vF%7BYXcm%40hW%7B%7D%40t_%40ixBpsB%7BrCpEeVy%40uj%40xD%7D%40~Isd%40rj%40lRnkAyFlYaRl%7DAgyB%7C~%40um%40r_%40vR%7Ct%40qp%40d%7B%40wfAx%7CAwbAjFq%5Bjg%40h%5Bl_%40zx%40bb%40b%40~HnO%7COGl_%40vV~qA%7CApc%40fQd~AfUbLk%5Ch_%40aKf~%40%7D%7C%40ljBkiGpMsAbqAmkAf~%40wOdyAei%40rq%40oeALkwDm_%40oExIwTAy%5Dpk%40kv%40%7C%60Aaz%40dZgk%40fR%7BmCrRwM~d%40%7Dx%40~h%40vu%40fmAcu%40n%40%7CeArm%40_CnEaMxCkpBv%5CqQfQo%5EtKjDfOg%60%40t%5BeMnqBazDAaMe%5Ckm%40xVyo%40vj%40w%60%40peAuMeExJlJ%60B&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3AeooxEper_VdG%60CbAvNhx%40sCvA%7Cj%40bmBcJzwBtYle%40duBzWtb%40vs%40jhB%60u%40rrAta%40b%5Cjb%40x%7C%40s%40bhAnWtbBdw%40jpAgAli%40nI%7Cu%40kEjqApQx_AoAl%7C%40tPfs%40%7DEja%40bApo%40wUfeA%7DZ~o%40iGfd%40%60Cr%40cWz%7C%40vD%7CaAkPjg%40%7DOzaBzHbw%40j%60%40%60k%40rHzjArPfh%40wGrnDpOnu%40Ur%60ArdAhkBrU%7DKp%5Dqk%40~n%40mm%40xq%40woAps%40e_AzoAex%40ti%40gi%40bNuh%40beBeaDt%5E%7BvAtHuhBcCerBvq%40idBn%7BA%7D%7D%40jrBiw%40v%7D%40cx%40%7CgCeo%40j_%40%7DZhIu_%40rTsXrJiqAvMsVwD_b%40vF%7BYXcm%40hW%7B%7D%40t_%40ixBpsB%7BrCpEeVy%40uj%40xD%7D%40~Isd%40rj%40lRnkAyFlYaRl%7DAgyB%7C~%40um%40r_%40vR%7Ct%40qp%40d%7B%40wfAx%7CAwbAjFq%5Bjg%40h%5Bl_%40zx%40bb%40b%40~HnO%7COGl_%40vV~qA%7CApc%40fQd~AfUbLk%5Ch_%40aKf~%40%7D%7C%40ljBkiGpMsAbqAmkAf~%40wOdyAei%40rq%40oeALkwDm_%40oExIwTAy%5Dpk%40kv%40%7C%60Aaz%40dZgk%40fR%7BmCrRwM~d%40%7Dx%40~h%40vu%40fmAcu%40n%40%7CeArm%40_CnEaMxCkpBv%5CqQfQo%5EtKjDfOg%60%40t%5BeMnqBazDAaMe%5Ckm%40xVyo%40vj%40w%60%40peAuMeExJlJ%60B&scale=1&sensor=false&size=640x320');
 }
 
 #sml {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Ag~otEhqa~Ub_%40m%40zC_BxHrCjz%40%3Fp%40w%7B%40rWqDxjEL%60NuAnMVdLfEro%40cA~SgAfMsEjP%5BhWyIzd%40uFxGp%40vJpKtNGbG_CzNoTd_%40q%40V%7CjBcB%60ZOvv%40DtRjAhAiA%5CAbGndAa%40JvaA%7CEfTcd%40jwBgX~%7D%40tMjM~F~Nx%40tJaB~d%40fChLnr%40%7Cy%40pFtDzTShRxD%7CVIl%60B~Jne%40~QlPvLdHeBvFqQtLkMjPQ%60KuE%60Gv%40%60LzHlKn%40zS_DzOvFli%40fHrLzItTdI~P%60RzFdNtCpCbQnDtNnLhT~%40dJxHfEjQgKlN_Rdg%40PvDQcDdQae%40nLuQyDgXvCes%40~VghAdD%7BkA%7CHki%40bD%7Db%40rFrb%40c%40%60%5DrCvNvJvJb_%40tFjKlZtGfK%60Q%60m%40hQnGflEsgEtl%40u%60%40f%5Cq%40bKlOtKxJjRhf%40%60HlEx%7DBpAvGyCzj%40me%40xS_JxOkBju%40I%60A%7DkB%60eDn%40Xyu%40_KtAiG%7BBb%40qsC%7BHa%40UcOyd%40s_AuI%60HcKzNgHfCmJK&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Ag~otEhqa~Ub_%40m%40zC_BxHrCjz%40%3Fp%40w%7B%40rWqDxjEL%60NuAnMVdLfEro%40cA~SgAfMsEjP%5BhWyIzd%40uFxGp%40vJpKtNGbG_CzNoTd_%40q%40V%7CjBcB%60ZOvv%40DtRjAhAiA%5CAbGndAa%40JvaA%7CEfTcd%40jwBgX~%7D%40tMjM~F~Nx%40tJaB~d%40fChLnr%40%7Cy%40pFtDzTShRxD%7CVIl%60B~Jne%40~QlPvLdHeBvFqQtLkMjPQ%60KuE%60Gv%40%60LzHlKn%40zS_DzOvFli%40fHrLzItTdI~P%60RzFdNtCpCbQnDtNnLhT~%40dJxHfEjQgKlN_Rdg%40PvDQcDdQae%40nLuQyDgXvCes%40~VghAdD%7BkA%7CHki%40bD%7Db%40rFrb%40c%40%60%5DrCvNvJvJb_%40tFjKlZtGfK%60Q%60m%40hQnGflEsgEtl%40u%60%40f%5Cq%40bKlOtKxJjRhf%40%60HlEx%7DBpAvGyCzj%40me%40xS_JxOkBju%40I%60A%7DkB%60eDn%40Xyu%40_KtAiG%7BBb%40qsC%7BHa%40UcOyd%40s_AuI%60HcKzNgHfCmJK&scale=1&sensor=false&size=640x320');
 }
 
 #lv {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Ai~nrEtha~UzT%7BAdUaWpVzd%40~b%40aJ~KsLt%5EfCra%40qTfz%40aM~c%40%7Bs%40ju%40wDzPii%40thAa%5BqEi%7B%40fIwgAx~%40yrAx_%40oQ%7CKwOfjDeqAfs%40yr%40zj%40g%5Dh%5DwlApCmz%40aj%40opBsIadArQyl%40pFgp%40tVihApBcr%40%60h%40ixB~Bec%40hIiHpZYhn%40f%5CpLmCxKyUpT%7BBhh%40xYbl%40eSpIqM%5CgrC~JkwARgsBcPkdB%7BAciAhQwnCpu%40i%7BBbJem%40yAicA%7DRqi%40eCiWhS%7DfAiKeyBbRkgEp_%40imEbrAgcCrQelAfIknAtr%40c%7CCQomBfa%40oAkEmc%40vFYzB%7DRuEgA%7BDlTwZvAuEuoDe%5E_tB%7CFmeE_%60%40wrDlMo%5BzFcmAjf%40_w%40bWcu%40tn%40tc%40bsAoKfViiBfTh%40zFgKxBkaA%7BGi_%40c%5BkZoJed%40q%5BgGqYc%5DsK%7Db%40kTcyBiJaIsGcc%40BmOpV%7BB%60Fy%60AsCsHwN%7B%40GsQeLUF_%60%40%7BEa%40%7CJul%40cGq%7D%40pG_l%40kCah%40%7CXkoA%3Fi%5EnIe%5EcFubAtBgf%40j%7C%40ywApLixBtOkApCg%60%40xu%40waAlz%40ucDpj%40qc%40cEaBp%40ss%40%60Oo%7B%40rgBmhB%60Dy%60AtIcSb%60BceBlp%40siAjjAa%7D%40rB%7DRgPghA%7CF%7B_%40d~AwbC%7CdAcz%40xVw%5Dxo%40elBjAmdAzk%40Hh%40qk%40qIks%40~%5C%7D~%40&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3Ai~nrEtha~UzT%7BAdUaWpVzd%40~b%40aJ~KsLt%5EfCra%40qTfz%40aM~c%40%7Bs%40ju%40wDzPii%40thAa%5BqEi%7B%40fIwgAx~%40yrAx_%40oQ%7CKwOfjDeqAfs%40yr%40zj%40g%5Dh%5DwlApCmz%40aj%40opBsIadArQyl%40pFgp%40tVihApBcr%40%60h%40ixB~Bec%40hIiHpZYhn%40f%5CpLmCxKyUpT%7BBhh%40xYbl%40eSpIqM%5CgrC~JkwARgsBcPkdB%7BAciAhQwnCpu%40i%7BBbJem%40yAicA%7DRqi%40eCiWhS%7DfAiKeyBbRkgEp_%40imEbrAgcCrQelAfIknAtr%40c%7CCQomBfa%40oAkEmc%40vFYzB%7DRuEgA%7BDlTwZvAuEuoDe%5E_tB%7CFmeE_%60%40wrDlMo%5BzFcmAjf%40_w%40bWcu%40tn%40tc%40bsAoKfViiBfTh%40zFgKxBkaA%7BGi_%40c%5BkZoJed%40q%5BgGqYc%5DsK%7Db%40kTcyBiJaIsGcc%40BmOpV%7BB%60Fy%60AsCsHwN%7B%40GsQeLUF_%60%40%7BEa%40%7CJul%40cGq%7D%40pG_l%40kCah%40%7CXkoA%3Fi%5EnIe%5EcFubAtBgf%40j%7C%40ywApLixBtOkApCg%60%40xu%40waAlz%40ucDpj%40qc%40cEaBp%40ss%40%60Oo%7B%40rgBmhB%60Dy%60AtIcSb%60BceBlp%40siAjjAa%7D%40rB%7DRgPghA%7CF%7B_%40d~AwbC%7CdAcz%40xVw%5Dxo%40elBjAmdAzk%40Hh%40qk%40qIks%40~%5C%7D~%40&scale=1&sensor=false&size=640x320');
 }
 
 #vla {
   height: 320px;
   background-repeat: no-repeat;
   background-position: right top;
-  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3A_qdpEd_%60wUzPmRnFcRtU%7BQhTmKaJe_%40tb%40%7BVxUyHbn%40yJvlCmGhoGgrCbOuJ%60A%7BGR%7DpE%60aCQRosDck%40qzASmO%60zAg%40v%40a_FdNyU%60Yk%5CdZsTlP%40dCsApEyEBuGvAkEjPyM%60_Ako%40rD%5DlH%7CDmAsHbAsHx_%40uZvS_F~%5DbJ%7CE%5BxRsZxTqj%40vMyRx%5BsZfDaLxCe%60%40jEoNqCgWvJylAd%5Bos%40ro%40waAlAeUxBoHlSkQdDgNiBuf%40%60AsNhDgVvYk~%40v%40yQc%40kN~X_n%40xEkRzNgTjYqfAlRy%7B%40rFef%40sKyi%40Ww%5DdPi%7D%40zUcfD%7CEshBfOav%40nFwu%40rR%7Dp%40hj%40yz%40~Qk%60%40r%5E%7Be%40dD_Kp%40oLkEwZaTc%5ByFuOi%40_RzIwi%40OuUoT%7Bs%40%7BIej%40p%40sq%40sByt%40qDoQ%7DQ%7Db%40cSmlA%5Bq%7D%40oCmh%40dAyaAmDcdAbCcAeCi%40aBmg%40rDibAuCmb%40yMgTyIg%5CiBqj%40dCov%40~Dcg%40mBu%5EnI_u%40mCa%5Dt%40cYoCoOSkJjG%7DnAu%40cGyFiKyE%7DTeBkdAnFem%40aGm%5DF_XyIeU%7B%40eQlD_d%40~Oum%40mEkb%40WiZlDqXzPyc%40dAp%40vCsGtUiu%40hAcJ%60Pa%5EmLiPaBkThTjKtEaJkEmAmb%40%7Dc%40c%5DsImH_Eyt%40idA_VojBvJkNyl%40qw%40bDmDNuQ%60GdArDoC&scale=1&sensor=false&size=640x320'), linear-gradient(to right, rgb(17, 129, 191), rgb(17, 129, 191), #B1D0FF, #B1D0FF, #B1D0FF);
+  background-color: #B1D0FF;
+  background-image: url('http://maps.google.com/maps/api/staticmap?maptype=roadmap&path=color%3A0xE64848FF%7Cweight%3A2%7Cenc%3A_qdpEd_%60wUzPmRnFcRtU%7BQhTmKaJe_%40tb%40%7BVxUyHbn%40yJvlCmGhoGgrCbOuJ%60A%7BGR%7DpE%60aCQRosDck%40qzASmO%60zAg%40v%40a_FdNyU%60Yk%5CdZsTlP%40dCsApEyEBuGvAkEjPyM%60_Ako%40rD%5DlH%7CDmAsHbAsHx_%40uZvS_F~%5DbJ%7CE%5BxRsZxTqj%40vMyRx%5BsZfDaLxCe%60%40jEoNqCgWvJylAd%5Bos%40ro%40waAlAeUxBoHlSkQdDgNiBuf%40%60AsNhDgVvYk~%40v%40yQc%40kN~X_n%40xEkRzNgTjYqfAlRy%7B%40rFef%40sKyi%40Ww%5DdPi%7D%40zUcfD%7CEshBfOav%40nFwu%40rR%7Dp%40hj%40yz%40~Qk%60%40r%5E%7Be%40dD_Kp%40oLkEwZaTc%5ByFuOi%40_RzIwi%40OuUoT%7Bs%40%7BIej%40p%40sq%40sByt%40qDoQ%7DQ%7Db%40cSmlA%5Bq%7D%40oCmh%40dAyaAmDcdAbCcAeCi%40aBmg%40rDibAuCmb%40yMgTyIg%5CiBqj%40dCov%40~Dcg%40mBu%5EnI_u%40mCa%5Dt%40cYoCoOSkJjG%7DnAu%40cGyFiKyE%7DTeBkdAnFem%40aGm%5DF_XyIeU%7B%40eQlD_d%40~Oum%40mEkb%40WiZlDqXzPyc%40dAp%40vCsGtUiu%40hAcJ%60Pa%5EmLiPaBkThTjKtEaJkEmAmb%40%7Dc%40c%5DsImH_Eyt%40idA_VojBvJkNyl%40qw%40bDmDNuQ%60GdArDoC&scale=1&sensor=false&size=640x320')
 }
 
 
